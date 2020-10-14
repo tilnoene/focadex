@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'left main main main main right'
+      'footer footer footer footer footer footer';
+}
+
+.cor-texto {
+    color: black;
+}
+
+.cabecalho {
+    grid-area: header;
+    height: 150px;
+    background-image: linear-gradient(rgb(255, 88, 88), rgb(204, 0, 0));
+}
+
+.topo {
+    display: flex;
+    grid-gap: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    padding-left: 40px;
+    margin-top: -25px;
+    filter: invert(1);
+}
+
+#dark-mode {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    outline: none;
+    filter: invert(1);
+    margin-left: auto;
+}
+
+.perfil {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    margin-top: 15px;
+}
+
+.sair {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    padding-right: 25px;
+    filter: invert(1);
+}
+
+.nome-do-treinador {
+    text-align: center;
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+.nome-do-treinador a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.foto-treinador {
+    width: 110px;
+    height: 110px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    border-radius: 100%;
+}
+
+.container-menu {
+    display: flex;
+    font-size: min(3.8vw, 17px);
+    padding-top: 50px;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    text-align: center;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    
+}
+
+.menu-atual {
+    color: rgb(204, 0, 0);
+}
+
+.menu li a:hover {
+    color: rgb(204, 0, 0);
+}
+
+.meio {
+    grid-area: main;
+}
+
+.pesquisa {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+.pesquisa input[type=text] {
+    color: black;
+    width: 250px;
+    border-top: rgb(77, 77, 77);
+    border-width: 1.5px;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+}
+
+.pesquisa ::placeholder {
+    color: rgb(168, 168, 168);
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+}
+
+.lupa {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    margin-left: -25px;
+    margin-top: -10px;
+    position: absolute;
+    outline: none;
+}
+
+.lupa img{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lupa:hover {
+    cursor: pointer;
+}
+
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.atributos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.container-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 100px 25px 100px; /* cima esq baixo dir*/
+    grid-gap: 20px;
+}
+
+.pokemon {
+    display: block;
+    width: 300px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: rgb(235, 0, 0);
+}
+
+.pokemon a {
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.pokemon img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.pokemon p {
+    float: left;
+    max-width: 500px;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-bottom: 6px;
+}
+
+.favorito {
+    width: 25px;
+    height: 25px;
+    outline: none;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.tipo {
+    width: 60px;
+    height: 20px;
+    border-radius: 7px;
+    color: white;
+    display: flex;
+    margin-left: 10px;
+}
+
+.tipo p {
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tipo.normal {
+    background-color: rgb(133, 133, 133);
+}
+
+.tipo.grass {
+    background-color: rgb(12, 180, 96);
+}
+
+.tipo.poison {
+    background-color: rgb(141, 45, 252);
+}
+
+.esq {
+    grid-area: left;
+}
+
+.dir {
+    grid-area: right;
+}
+
+.rodape {
+    grid-area: footer;
+    text-align: center;
+    font-size: 13px;
+}
+
+.container-menu-inferior {
+    display: flex;
+    font-size: 17px;
+    padding-top: 5px;
+}
+
+.menu-inferior {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-inferior li {
+    float: left;
+}
+
+.menu-inferior li a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.menu-inferior li a p {
+    margin: 0;
+    padding-top: 5px;
+}
+
+.menu-inferior-elemento {
+    color:rgb(204, 0, 0);
+}
+
+.menu-inferior-atual {
+    color: white;
+    background-color: rgb(204, 0, 0);
+}
+
+.menu-inferior li a:hover {
+    color: white;
+    background-color: rgb(204, 0, 0);
+}
+
+.rodape .creditos {
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+.rodape .creditos p {
+    text-align: right;
+    padding-right: 20px;
+    margin: 0;
+}
+
+.rodape .creditos .nome-dev {
+    color: rgb(235, 0, 0);
+    text-decoration: none;
+}

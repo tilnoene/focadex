@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focadex</title>
+    <link rel="icon" type="imagem/png" href="./images/pokebola.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="modo_diurno()">
+    <div class="grid-container">
+        <div class="cabecalho">
+            <div class="topo">
+                <a href="./index.html"><img src="./images/logo.svg" alt="Logo Focadex" class="logo"></a>
+                <input type=image src="./images/lua-1.png" alt="Modo Noturno" id="dark-mode" onclick="alterar_modo()">
+                <a href="./index.html"><img src="./images/perfil.png" alt="Perfil" class="perfil"></a>
+                <a href="./index.html"><img src="./images/sair.png" alt="Sair" class="sair"></a>
+            </div>
+            <p class="nome-do-treinador"><a href="https://www.instagram.com/tilnoene/" target="_blank">@vito</a></p>
+            <img src="./images/victor_sol.jpg" alt="Foto do Treinador" class="foto-treinador">
+        </div>
+        <div class="esq"></div>
+        <div class="meio">
+            <div class="container-menu">
+                <ul class="menu">
+                    <li><a href="default.asp" class="cor-texto">Equipe</a></li>
+                    <li><a href="./index.html" class="menu-atual cor-texto">Pokédex</a></li>
+                    <li><a href="default.asp" class="cor-texto">Amigos</a></li>
+                    <li><a href="default.asp" class="cor-texto">Histórico</a></li>
+                </ul>
+            </div>
+            
+            <div class="container-pesquisa">
+                <div class="pesquisa">
+                    <input type="text" placeholder="Procure um pokemon">
+                    <button type="submit" class="lupa">
+                        <img src="./images/lupa.png" alt="Pesquisar" class="lupa">
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-pokemon">
+                <div class="pokemon">
+                    <a href="./popplio.html"><img src="./images/popplio.png"></a>
+                    <div class="atributos">
+                        <a href="./popplio.html" class="cor-texto"><p>#132 Popplio</p></a>
+                        <input type=image src="./images/estrela-1.png" alt="Favoritar" class="favorito" id="estrela0" onclick="favoritar(0)">
+                        <div class="break"></div>
+                        <div class="tipo normal"><p>NORMAL</p></div>
+                    </div>
+                </div>
+                <div class="pokemon">
+                    <a href="./ditto.html"><img src="./images/ditto.svg"></a>
+                    <div class="atributos">
+                        <a href="./ditto.html" class="cor-texto"><p>#132 Ditto</p></a>
+                        <input type=image src="./images/estrela-1.png" alt="Favoritar" class="favorito" id="estrela1" onclick="favoritar(1)">
+                        <div class="break"></div>
+                        <div class="tipo normal"><p>NORMAL</p></div>
+                    </div>
+                </div>
+                <div class="pokemon">
+                    <a href="./bulbassauro.html"><img src="./images/bulbassauro.svg"></a>
+                    <div class="atributos">
+                    <a href="./ditto.html" class="cor-texto"><p>#001 Bulbassauro</p></a>
+                    <input type=image src="./images/estrela-1.png" alt="Favoritar" class="favorito" id="estrela2" onclick="favoritar(2)">
+                        <div class="break"></div>
+                        <div class="tipo grass"><p>GRASS</p></div>
+                        <div class="tipo poison"><p>POISON</p></div>
+                    </div>
+                </div>
+                <div class="pokemon">
+                    <a href="./ditto.html"><img src="./images/ditto.svg"></a>
+                    <div class="atributos">
+                        <a href="./popplio.html" class="cor-texto"><p>#132 Popplio</p></a>
+                        <input type=image src="./images/estrela-1.png" alt="Favoritar" class="favorito" id="estrela3" onclick="favoritar(3)">
+                        <div class="break"></div>
+                        <div class="tipo normal"><p>NORMAL</p></div>
+                    </div>
+                </div>
+                <div class="pokemon">
+                    <a href="./ditto.html"><img src="./images/ditto.svg"></a>
+                    <div class="atributos">
+                        <a href="./popplio.html" class="cor-texto"><p>#132 Popplio</p></a>
+                        <input type=image src="./images/estrela-1.png" alt="Favoritar" class="favorito" id="estrela4" onclick="favoritar(4)">
+                        <div class="break"></div>
+                        <div class="tipo normal"><p>NORMAL</p></div>
+                    </div>
+                </div>
+                <div class="pokemon">
+                    <a href="./bulbassauro.html"><img src="./images/bulbassauro.svg"></a>
+                    <div class="atributos">
+                        <a href="./ditto.html" class="cor-texto"><p>#001 Bulbassauro</p></a>
+                        <input type=image src="./images/estrela-1.png" alt="Favoritar" class="favorito" id="estrela5" onclick="favoritar(5)">
+                        <div class="break"></div>
+                        <div class="tipo grass"><p>GRASS</p></div>
+                        <div class="tipo poison"><p>POISON</p></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="dir"></div>
+        <div class="rodape cor-texto">
+            <div class="container-menu-inferior">
+                <ul class="menu-inferior">
+                    <li><a href="./index.html" class="menu-inferior-atual"><p>1</p></a></li>
+                    <li><a href="./index.html" class="menu-inferior-elemento"><p>2</p></a></li>
+                    <li><a href="./index.html" class="menu-inferior-elemento"><p>...</p></a></li>
+                    <li><a href="./index.html" class="menu-inferior-elemento"><p>9</p></a></li>
+                </ul>
+            </div>
+
+            <footer class="creditos cor-texto"><p>desenvolvido por <a href="https://www.instagram.com/tilnoene/" target="_blank" class="nome-dev"> Victor Manuel</a></p></footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
