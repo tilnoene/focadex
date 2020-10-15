@@ -124,11 +124,13 @@ body {
     display: block;
     margin-bottom: 10px;
     margin-left: 100px;
+    margin: 15px 0 0 100px;
+    filter: invert(0);
 }
 
 .pesquisa input[type=text] {
     color: black;
-    width: 250px;
+    width: 280px;
     border-top: rgb(77, 77, 77);
     border-width: 1.5px;
     border-left: none;
@@ -154,7 +156,7 @@ body {
     outline: none;
 }
 
-.lupa img{
+.lupa img {
     display: block;
     width: 20px;
     height: 20px;
@@ -165,7 +167,6 @@ body {
 .lupa:hover {
     cursor: pointer;
 }
-
 
 .break {
     flex-basis: 100%;
@@ -181,13 +182,15 @@ body {
 .container-pokemon {
     display: flex;
     flex-wrap: wrap;
+    align-self: flex-end;
     padding: 25px 100px 25px 100px; /* cima esq baixo dir*/
     grid-gap: 20px;
 }
 
 .pokemon {
+    align-self: flex-end;
     display: block;
-    width: 300px;
+    width: max(300px, 25vw);
     height: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -297,6 +300,8 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 15px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .menu-inferior li a p {
@@ -319,13 +324,13 @@ body {
 }
 
 .rodape .creditos {
-    padding: 0 0 10px 0;
     margin: 0;
 }
 
 .rodape .creditos p {
     text-align: right;
     padding-right: 20px;
+    padding-top: 10px;
     margin: 0;
 }
 

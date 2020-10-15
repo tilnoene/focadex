@@ -23,7 +23,7 @@ function modo_noturno(){
             menu[i].style.color = "white";
     }
     document.getElementsByClassName("nome-dev")[0].style.color = "rgb(168, 168, 168)";
-    document.getElementsByClassName("lupa")[0].filter = "invert(1)";
+    document.getElementsByClassName("pesquisa")[0].style.filter = "invert(1)";
     estrelas = document.getElementsByClassName("favorito");
     for(i = 0; i < estrelas.length; i++){
         estrelas[i].style.filter = "invert(1)";
@@ -44,7 +44,7 @@ function modo_diurno(){
             menu[i].style.color = "black";
     }
     document.getElementsByClassName("nome-dev")[0].style.color = "rgb(204, 0, 0)";
-    document.getElementsByClassName("lupa")[0].filter = "invert(1)";
+    document.getElementsByClassName("pesquisa")[0].style.filter = "invert(0)";
     estrelas = document.getElementsByClassName("favorito");
     for(i = 0; i < estrelas.length; i++){
         estrelas[i].style.filter = "invert(0)";
