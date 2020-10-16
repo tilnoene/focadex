@@ -382,7 +382,7 @@ body {
 
 .imagem-pokemon img {
     width: min(300px, 50vw);
-    height: 300px;
+    height: min(300px, 50vw);
     float: right;
 }
 
