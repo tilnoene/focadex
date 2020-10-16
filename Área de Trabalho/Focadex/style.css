@@ -249,15 +249,15 @@ body {
     margin-right: auto;
 }
 
-.tipo.normal {
+.normal {
     background-color: rgb(133, 133, 133);
 }
 
-.tipo.grass {
+.grass {
     background-color: rgb(12, 180, 96);
 }
 
-.tipo.poison {
+.poison {
     background-color: rgb(141, 45, 252);
 }
 
@@ -338,3 +338,75 @@ body {
     color: rgb(235, 0, 0);
     text-decoration: none;
 }
+
+/* pokemon page */
+.voltar {
+    margin-top: 30px;
+}
+
+.voltar a {
+    font-size: 17px;
+    text-decoration: none;    
+}
+
+.meio-tela {
+    grid-area: main;
+    display: block;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* fr é uma unidade fracional */
+.container-informacoes {
+    display: grid;
+    margin: 0 auto;
+    padding-top: 50px;
+    grid-template-columns: 2fr 2fr;
+}
+/* Estilos Gerais */
+.imagem-pokemon {
+    font-size: 30px;
+}
+
+.imagem-pokemon img {
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+.container-informacoes p {
+    margin-top: 35px;
+    padding-left: 40px;
+    font-size: 45px;
+}
+
+.tipo-2 {
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    width: 80px;
+    float: left;
+    color: white;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.tipo-2 p {
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.atributos-pokemon p a {
+    font-size: 23px;
+    padding-left: 5px;
+    color: rgb(168, 168, 168);
+}
+
+.atributos-pokemon p {
+    margin-bottom: 0;
+}
+
+.atributos-fundo {
+    background-color: blue;
+}
+
