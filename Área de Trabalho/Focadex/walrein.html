@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walrein | Focadex™</title>
+    <link rel="icon" type="imagem/png" href="./images/pokebola.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="modo_diurno(false)">
+    <div class="grid-container">
+        <div class="cabecalho">
+            <div class="topo">
+                <a href="./index.html"><img src="./images/logo.svg" alt="Logo Focadex" class="logo"></a>
+                <input type=image src="./images/lua-1.png" alt="Modo Noturno" id="dark-mode" onclick="alterar_modo(false)">
+                <a href="./index.html"><img src="./images/perfil.png" alt="Perfil" class="perfil"></a>
+                <a href="./index.html"><img src="./images/sair.png" alt="Sair" class="sair"></a>
+            </div>
+        </div>
+        
+        <div class="esq"></div>
+        <div class="meio-tela">
+            <div class="voltar">
+                <a class="cor-texto" href="./index.html">◂ Voltar</a>
+            </div>
+            
+            <section class="container-informacoes">
+                <div class="imagem-pokemon"><img src="./images/walrein.png"></div>
+                <div class="atributos-pokemon">
+                    <p class="cor-texto nome-do-pokemon">Walrein <a>#365</a></p>
+                    <div class="tipo-2 water"><p>WATER</p></div><div class="tipo-2 ice"><p>ICE</p></div>
+                    <p class="lista-atributos first cor-texto"><br />Altura: 1.4 m</p>
+                    <p class="lista-atributos cor-texto">Peso: 150.6 kg</p>
+                    <p class="lista-atributos cor-texto">Gênero: M/F</p>
+                </div>
+                
+            </section>
+            <div class="atributos-fundo">
+                <p class="cor-texto">Atributos</p>
+                <div class="barras">
+                    <div class="linha cor-texto">VIDA<progress max="15" value="7"></progress></div>
+                    <div class="linha cor-texto">ATAQUE<progress max="15" value="5"></progress></div>
+                    <div class="linha cor-texto">DEFESA<progress max="15" value="6"></progress></div>
+                    <div class="linha cor-texto">VELOCIDADE<progress max="15" value="4"></progress></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

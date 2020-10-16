@@ -249,16 +249,28 @@ body {
     margin-right: auto;
 }
 
-.tipo.normal {
+.normal {
     background-color: rgb(133, 133, 133);
 }
 
-.tipo.grass {
+.grass {
     background-color: rgb(12, 180, 96);
 }
 
-.tipo.poison {
+.poison {
     background-color: rgb(141, 45, 252);
+}
+
+.water {
+    background-color: rgb(0, 114, 207);
+}
+
+.ice {
+    background-color: rgb(70, 169, 250);
+}
+
+.fairy {
+    background-color: rgb(255, 125, 233);
 }
 
 .esq {
@@ -337,4 +349,121 @@ body {
 .rodape .creditos .nome-dev {
     color: rgb(235, 0, 0);
     text-decoration: none;
+}
+
+/* pokemon page */
+.voltar {
+    padding-left: 10%;
+    margin-top: 35px;
+}
+
+.voltar a {
+    font-size: 17px;
+    text-decoration: none;  
+}
+
+.meio-tela {
+    grid-area: main;
+    display: block;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* fr é uma unidade fracional */
+.container-informacoes {
+    display: grid;
+    margin: 0 auto;
+    padding-top: 25px;
+    grid-template-columns: 2fr 2fr;
+}
+/* Estilos Gerais */
+.imagem-pokemon {
+    font-size: 30px;
+}
+
+.imagem-pokemon img {
+    width: min(300px, 50vw);
+    height: 300px;
+    float: right;
+}
+
+.container-informacoes .nome-do-pokemon {
+    margin-top: 35px;
+    padding-left: 40px;
+    font-size: 45px;
+}
+
+.container-informacoes p {
+    padding-left: 40px;
+    font-size: 17px;
+}
+
+.tipo-2 {
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    width: 80px;
+    float: left;
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.atributos-pokemon > .tipo-2:first-of-type{
+    margin-left: 40px;
+}
+
+.tipo-2 p {
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.atributos-pokemon p a {
+    font-size: 23px;
+    padding-left: 5px;
+    color: rgb(168, 168, 168);
+}
+
+.atributos-pokemon p {
+    margin-bottom: 0;
+}
+
+.lista-atributos {
+    margin-top: 10px;
+}
+
+.lista-atributos.first {
+    margin-top: 50px;
+}
+
+.atributos-fundo {
+    padding-bottom: 30px;
+}
+
+.atributos-fundo p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.barras {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.barras progress {
+    float: right;
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.barras progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.linha {
+    margin: 5px;
 }

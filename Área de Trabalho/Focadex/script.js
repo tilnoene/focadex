@@ -1,36 +1,38 @@
 noturno = false;
 
-function alterar_modo(){
+function alterar_modo(modo=true){
     if(noturno){
-        modo_diurno();
+        modo_diurno(modo);
         noturno = false;
     } else{
-        modo_noturno();
+        modo_noturno(modo);
         noturno = true;
     }
 }
 
-function modo_noturno(){
+function modo_noturno(modo=true){
     icone = document.getElementById("dark-mode");
     icone.src = "./images/lua-2.png";
 
     document.body.style.backgroundColor = "#36393E";
     menu = document.getElementsByClassName("cor-texto");
     for(i = 0; i < menu.length; i++){
-        if(i == 1){
+        if(i == 1 && modo){
             menu[i].style.color = "rgb(168, 168, 168)";
         } else
             menu[i].style.color = "white";
     }
-    document.getElementsByClassName("nome-dev")[0].style.color = "rgb(168, 168, 168)";
-    document.getElementsByClassName("pesquisa")[0].style.filter = "invert(1)";
-    estrelas = document.getElementsByClassName("favorito");
-    for(i = 0; i < estrelas.length; i++){
-        estrelas[i].style.filter = "invert(1)";
+    if(modo){
+        document.getElementsByClassName("nome-dev")[0].style.color = "rgb(168, 168, 168)";
+        document.getElementsByClassName("pesquisa")[0].style.filter = "invert(1)";
+        estrelas = document.getElementsByClassName("favorito");
+        for(i = 0; i < estrelas.length; i++){
+            estrelas[i].style.filter = "invert(1)";
+        }
     }
 }
 
-function modo_diurno(){
+function modo_diurno(modo=true){
     icone = document.getElementById("dark-mode");
     icone.src = "./images/lua-1.png";
 
@@ -38,16 +40,19 @@ function modo_diurno(){
 
     menu = document.getElementsByClassName("cor-texto");
     for(i = 0; i < menu.length; i++){
-        if(i == 1){
+        if(i == 1 && modo){
             menu[i].style.color = "rgb(204, 0, 0)";
         } else
             menu[i].style.color = "black";
     }
-    document.getElementsByClassName("nome-dev")[0].style.color = "rgb(204, 0, 0)";
-    document.getElementsByClassName("pesquisa")[0].style.filter = "invert(0)";
-    estrelas = document.getElementsByClassName("favorito");
-    for(i = 0; i < estrelas.length; i++){
-        estrelas[i].style.filter = "invert(0)";
+
+    if(modo){
+        document.getElementsByClassName("nome-dev")[0].style.color = "rgb(204, 0, 0)";
+        document.getElementsByClassName("pesquisa")[0].style.filter = "invert(0)";
+        estrelas = document.getElementsByClassName("favorito");
+        for(i = 0; i < estrelas.length; i++){
+            estrelas[i].style.filter = "invert(0)";
+        }
     }
     
 }
