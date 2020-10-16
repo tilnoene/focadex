@@ -381,9 +381,17 @@ body {
 }
 
 .imagem-pokemon img {
-    width: min(300px, 50vw);
-    height: min(300px, 50vw);
+    width: 50vw;
+    height: 50vw;
+    max-width: 300px;
+    max-height: 300px;
     float: right;
+}
+
+@media only screen and (max-width: 500px) {
+    .imagem-pokemon img {
+        margin-top: 13vw;
+    }
 }
 
 .container-informacoes .nome-do-pokemon {
