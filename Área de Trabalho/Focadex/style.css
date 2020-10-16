@@ -261,6 +261,18 @@ body {
     background-color: rgb(141, 45, 252);
 }
 
+.water {
+    background-color: rgb(0, 114, 207);
+}
+
+.ice {
+    background-color: rgb(70, 169, 250);
+}
+
+.fairy {
+    background-color: rgb(255, 125, 233);
+}
+
 .esq {
     grid-area: left;
 }
@@ -392,8 +404,12 @@ body {
     width: 80px;
     float: left;
     color: white;
-    margin-left: 40px;
+    margin-left: 10px;
     margin-top: 10px;
+}
+
+.atributos-pokemon > .tipo-2:first-of-type{
+    margin-left: 40px;
 }
 
 .tipo-2 p {
