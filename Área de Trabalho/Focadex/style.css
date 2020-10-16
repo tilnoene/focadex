@@ -341,12 +341,13 @@ body {
 
 /* pokemon page */
 .voltar {
-    margin-top: 30px;
+    padding-left: 10%;
+    margin-top: 35px;
 }
 
 .voltar a {
     font-size: 17px;
-    text-decoration: none;    
+    text-decoration: none;  
 }
 
 .meio-tela {
@@ -359,7 +360,7 @@ body {
 .container-informacoes {
     display: grid;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 25px;
     grid-template-columns: 2fr 2fr;
 }
 /* Estilos Gerais */
@@ -368,15 +369,20 @@ body {
 }
 
 .imagem-pokemon img {
-    width: 300px;
+    width: min(300px, 50vw);
     height: 300px;
     float: right;
 }
 
-.container-informacoes p {
+.container-informacoes .nome-do-pokemon {
     margin-top: 35px;
     padding-left: 40px;
     font-size: 45px;
+}
+
+.container-informacoes p {
+    padding-left: 40px;
+    font-size: 17px;
 }
 
 .tipo-2 {
@@ -406,7 +412,42 @@ body {
     margin-bottom: 0;
 }
 
-.atributos-fundo {
-    background-color: blue;
+.lista-atributos {
+    margin-top: 10px;
 }
 
+.lista-atributos.first {
+    margin-top: 50px;
+}
+
+.atributos-fundo {
+    padding-bottom: 30px;
+}
+
+.atributos-fundo p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.barras {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.barras progress {
+    float: right;
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.barras progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.linha {
+    margin: 5px;
+}
