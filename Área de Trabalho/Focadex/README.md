@@ -1,3 +1,6 @@
+Victor Manuel Brito Santos
+victormanuel@cjr.org.br
+
 Projeto do módulo de HTML/CSS da CJR
 
 Página Inicial -> index.html

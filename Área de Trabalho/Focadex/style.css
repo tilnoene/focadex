@@ -368,14 +368,13 @@ body {
     grid-template-columns: 1fr 2fr;
 }
 
-/* fr é uma unidade fracional */
 .container-informacoes {
     display: grid;
     margin: 0 auto;
     padding-top: 25px;
     grid-template-columns: 2fr 2fr;
 }
-/* Estilos Gerais */
+
 .imagem-pokemon {
     font-size: 30px;
 }
